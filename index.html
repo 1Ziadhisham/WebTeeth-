@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عيادة د. رشا رشاد</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#071a2e">
+<meta name="description" content="عيادة د. رشا رشاد اللاوندي لطب الفم والأسنان في بورسعيد، أرض العزب. احجز موعدك على واتساب أو اتصل 01223533734.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "عيادة د. رشا رشاد لطب الفم والأسنان",
+  "alternateName": "Dr. Rasha Rashad Dental Clinic",
+  "slogan": "الضمير والأمانة هي شعارنا واهتمامنا",
+  "telephone": "+201223533734",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "عمارة 33، تقاطع شارع النصر وعباس العقاد، أرض العزب، خلف مطعم سرحان",
+    "addressLocality": "بورسعيد",
+    "addressCountry": "EG"
+  },
+  "sameAs": ["https://www.facebook.com/share/1EUbPvDxG1/"],
+  "medicalSpecialty": "Dentistry"
+}
+</script>
+<style>
+/* Layout: app-like single file with 4 hash views; deep harbour gradient + drifting light orbs; frosted-glass panels on top; glass tab bar on phones */
+:root{
+  --bg1:#061727; --bg2:#0b3557; --bg3:#0f4c6e;
+  --aqua:#4fd6c8; --sky:#7cc6ff; --gold:#f6c35b; --rose:#f3a6c0;
+  --ink:#eef6fc; --muted:#a8c0d6; --dim:#7f9ab3;
+  --glass:rgba(255,255,255,.075); --glass-hi:rgba(255,255,255,.13); --edge:rgba(255,255,255,.18); --edge-hi:rgba(255,255,255,.34);
+  --wa:#25d366; --onwa:#03200e; --ongold:#3a2600;
+  --display:"El Messiri","IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;
+  --body:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;
+  --r:22px; --blur:18px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-tap-highlight-color:transparent;background:var(--bg1)}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.75;direction:rtl;text-align:right;
+  background:radial-gradient(1200px 700px at 85% -10%,var(--bg3),transparent 60%),linear-gradient(160deg,var(--bg2),var(--bg1) 55%);background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg1)}
+h1,h2,h3{font-family:var(--display);line-height:1.3;text-wrap:balance;margin:0;font-weight:700}
+p{margin:0}
+a{color:var(--sky)}
+a,button,label,select,input{touch-action:manipulation}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:10px}
+.num{direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
+svg.ic{width:1.25em;height:1.25em;flex:none}
+
+/* drifting light */
+.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.orbs i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;will-change:transform}
+.orbs i:nth-child(1){width:46vmax;height:46vmax;background:var(--aqua);top:-14vmax;left:-10vmax;opacity:.32;animation:d1 26s ease-in-out infinite alternate}
+.orbs i:nth-child(2){width:38vmax;height:38vmax;background:#2f7fd6;bottom:-16vmax;right:-8vmax;opacity:.45;animation:d2 32s ease-in-out infinite alternate}
+.orbs i:nth-child(3){width:20vmax;height:20vmax;background:var(--gold);top:40%;left:45%;opacity:.16;animation:d3 22s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translate(18vw,14vh) scale(1.1)}}
+@keyframes d2{to{transform:translate(-16vw,-10vh) scale(1.15)}}
+@keyframes d3{to{transform:translate(-22vw,12vh) scale(.85)}}
+
+/* glass */
+.glass{background:linear-gradient(145deg,var(--glass-hi),var(--glass));border:1px solid var(--edge);border-radius:var(--r);
+  -webkit-backdrop-filter:blur(var(--blur)) saturate(140%);backdrop-filter:blur(var(--blur)) saturate(140%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 20px 50px -24px rgba(0,0,0,.6)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:rgba(16,52,84,.92)}}
+
+.wrap{max-width:1120px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;padding-block:12px}
+.top .bar{display:flex;align-items:center;gap:14px;padding:8px 10px 8px 14px;border-radius:999px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-width:0}
+.logo{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--sky),var(--aqua));flex:none}
+.logo svg{width:22px;height:22px}
+.brand b{font-family:var(--display);font-size:1.1rem;display:block;line-height:1.2}
+.brand small{color:var(--muted);font-size:.78rem;display:block;line-height:1.2}
+.tabs{position:relative;display:flex;gap:2px;margin-inline-start:auto;padding:4px;border-radius:999px;background:rgba(0,0,0,.18)}
+.tabs a{position:relative;z-index:1;color:var(--muted);text-decoration:none;padding:8px 16px;border-radius:999px;font-weight:500;font-size:.95rem;transition:color .25s}
+.tabs a:hover{color:var(--ink)}
+.tabs a[aria-current="page"]{color:var(--bg1)}
+.pill{position:absolute;z-index:0;top:4px;bottom:4px;border-radius:999px;background:linear-gradient(135deg,var(--sky),var(--aqua));transition:transform .45s cubic-bezier(.3,1.3,.5,1),width .45s cubic-bezier(.3,1.3,.5,1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding-inline:22px;border-radius:999px;font:600 1rem var(--body);text-decoration:none;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn-wa{background:var(--wa);color:var(--onwa);box-shadow:0 10px 30px -10px rgba(37,211,102,.7)}
+.btn-glass{color:var(--ink);background:var(--glass-hi);border:1px solid var(--edge-hi);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.btn-glass:hover{background:rgba(255,255,255,.2)}
+.btn-sm{min-height:40px;padding-inline:16px;font-size:.92rem}
+@media (max-width:820px){.tabs{display:none}.brand small{display:none}.top .btn-sm{margin-inline-start:auto}}
+
+/* views + transitions */
+main{padding-bottom:120px}
+.view{padding-block:24px 40px}
+.view.enter{animation:enter .55s cubic-bezier(.2,.8,.2,1) both}
+@keyframes enter{from{opacity:0;transform:translateY(18px) scale(.985);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+.view.enter .stag>*{animation:enter .6s cubic-bezier(.2,.8,.2,1) both}
+.view.enter .stag>*:nth-child(2){animation-delay:.06s}.view.enter .stag>*:nth-child(3){animation-delay:.12s}
+.view.enter .stag>*:nth-child(4){animation-delay:.18s}.view.enter .stag>*:nth-child(5){animation-delay:.24s}
+.view.enter .stag>*:nth-child(6){animation-delay:.3s}.view.enter .stag>*:nth-child(7){animation-delay:.36s}
+.view.enter .stag>*:nth-child(8){animation-delay:.42s}
+::view-transition-old(root){animation:vt-out .28s ease both}
+::view-transition-new(root){animation:vt-in .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes vt-out{to{opacity:0;filter:blur(10px);transform:scale(.98)}}
+@keyframes vt-in{from{opacity:0;filter:blur(10px);transform:scale(1.02)}}
+.head{display:grid;gap:8px;margin-bottom:26px;max-width:62ch}
+.head h2{font-size:clamp(1.9rem,5vw,2.8rem)}
+.head p{color:var(--muted)}
+.grad{background:linear-gradient(90deg,var(--ink),var(--sky) 55%,var(--aqua));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* home */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding-top:20px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.15}
+.hero .sub{color:var(--muted);font-size:1.15rem;margin-top:14px;max-width:46ch}
+.motto{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:10px 18px;border-radius:999px;font-family:var(--display);font-size:1.1rem}
+.motto::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.stage{position:relative;aspect-ratio:1;max-width:420px;width:100%;justify-self:center;display:grid;place-items:center;perspective:900px}
+.orbcard{width:78%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;transform-style:preserve-3d;transition:transform .3s ease-out}
+.orbcard svg{width:58%;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45));transform:translateZ(40px)}
+.float{position:absolute;padding:10px 14px;border-radius:16px;font-size:.9rem;display:flex;gap:8px;align-items:center;animation:bob 6s ease-in-out infinite}
+.float b{font-weight:600}
+.float .dot{width:10px;height:10px;border-radius:50%;flex:none}
+.f1{top:8%;inset-inline-start:0}.f2{bottom:14%;inset-inline-end:-2%;animation-delay:-2s}.f3{bottom:-2%;inset-inline-start:12%;animation-delay:-4s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.tile{display:grid;gap:6px;padding:22px;text-decoration:none;color:var(--ink);transition:transform .3s,border-color .3s,background .3s}
+.tile:hover{transform:translateY(-4px);border-color:var(--edge-hi)}
+.tile .gi{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;margin-bottom:6px}
+.tile h3{font-size:1.25rem}
+.tile p{color:var(--muted);font-size:.95rem}
+.tile .go{color:var(--sky);font-weight:600;font-size:.92rem;margin-top:6px}
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:4px}.stage{max-width:300px;grid-row:1}
+  .quick{grid-template-columns:1fr}
+}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;align-items:start}
+.svc details{padding:0;overflow:hidden;transition:border-color .3s,background .3s}
+.svc details[open]{border-color:var(--edge-hi);background:linear-gradient(145deg,rgba(255,255,255,.17),rgba(255,255,255,.07))}
+.svc summary{list-style:none;cursor:pointer;padding:20px;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary:hover h3{color:var(--sky)}
+.svc h3{font-size:1.15rem;transition:color .2s}
+.svc .gi{width:44px;height:44px;border-radius:14px;display:grid;place-items:center}
+.chev{width:20px;height:20px;color:var(--muted);transition:transform .35s}
+.svc details[open] .chev{transform:rotate(180deg)}
+.svc .body{padding:0 20px 20px;display:grid;gap:12px;color:var(--muted);font-size:.97rem;animation:enter .4s ease both}
+.svc .body .btn{justify-self:start}
+.gi svg{width:22px;height:22px;color:var(--bg1)}
+.g1{background:linear-gradient(135deg,var(--sky),var(--aqua))}
+.g2{background:linear-gradient(135deg,var(--gold),var(--rose))}
+.g3{background:linear-gradient(135deg,var(--aqua),#9be8a8)}
+.g4{background:linear-gradient(135deg,var(--rose),#c6a8ff)}
+.note{font-size:.88rem;color:var(--dim)}
+
+/* booking */
+.book{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:start}
+form{display:grid;gap:20px;padding:24px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend,.lbl{font-weight:600;margin-bottom:10px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{padding:8px 16px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--edge);background:rgba(255,255,255,.05);cursor:pointer;transition:background .25s,border-color .25s,color .25s,transform .2s}
+.chips label:hover{border-color:var(--edge-hi);background:rgba(255,255,255,.1)}
+.chips input:checked+label{background:linear-gradient(135deg,var(--sky),var(--aqua));border-color:transparent;color:var(--bg1);font-weight:600}
+.chips input:focus-visible+label{outline:3px solid var(--gold);outline-offset:2px}
+.field{display:grid;gap:8px}
+input[type=text],select{width:100%;min-height:50px;border-radius:14px;border:1px solid var(--edge);background:rgba(0,0,0,.22);color:var(--ink);font:inherit;padding-inline:14px;transition:border-color .2s,box-shadow .2s}
+input[type=text]:focus,select:focus{border-color:var(--sky);box-shadow:0 0 0 4px rgba(124,198,255,.18);outline:none}
+select option{background:var(--bg2);color:var(--ink)}
+input::placeholder{color:var(--dim)}
+.bubble{background:#0d3b2a;border:1px solid rgba(37,211,102,.35);border-radius:16px 16px 4px 16px;padding:12px 14px;white-space:pre-line;font-size:.95rem;color:#dff7e8}
+.side{display:grid;gap:16px}
+.info{padding:20px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+.info .gi{width:44px;height:44px;border-radius:14px;display:grid;place-items:center}
+.info b{display:block;margin-bottom:2px}
+.info p{color:var(--muted);font-size:.97rem}
+.copy{margin-top:8px;background:rgba(255,255,255,.08);border:1px solid var(--edge);color:var(--ink);border-radius:999px;padding:4px 14px;font:500 .85rem var(--body);cursor:pointer;min-height:36px;transition:background .2s}
+.copy:hover{background:rgba(255,255,255,.16)}
+@media (max-width:820px){.book{grid-template-columns:1fr}}
+
+footer{color:var(--dim);font-size:.88rem;padding-block:10px 20px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+footer a{color:var(--muted)}
+
+/* phone tab bar */
+.dock{display:none}
+@media (max-width:820px){
+  .dock{display:block;position:fixed;inset:auto 0 0;z-index:25;padding:0 max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+  .dock nav{display:grid;grid-template-columns:repeat(3,1fr);padding:6px;border-radius:24px;position:relative}
+  .dock a{position:relative;z-index:1;display:grid;justify-items:center;gap:2px;padding:6px 2px;color:var(--muted);text-decoration:none;font-size:.75rem;font-weight:500;border-radius:18px;transition:color .25s}
+  .dock a svg{width:22px;height:22px}
+  .dock a[aria-current="page"]{color:var(--bg1)}
+  .dock .pill{top:6px;bottom:6px;border-radius:18px}
+  main{padding-bottom:110px}
+}
+.skip{position:absolute;inset-inline-start:12px;top:-80px;z-index:40;background:var(--gold);color:var(--ongold);padding:8px 14px;border-radius:10px}
+.skip:focus{top:calc(10px + env(safe-area-inset-top,0px))}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  ::view-transition-old(root),::view-transition-new(root){animation:none!important}
+}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#e3f3ff"/><stop offset="1" stop-color="#9fd3f5"/></linearGradient>
+  </defs>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.3-.3-.3-.6-.4Z"/></symbol>
+  <symbol id="i-ph" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+  <symbol id="i-clk" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4 3.2 1.9-.8 1.3L11 13V7h2v5.4Z"/></symbol>
+  <symbol id="i-tooth" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.2C10 2 5.6 1.8 4.4 5c-1.2 3.3.5 6.5 1.3 9.3.7 2.7.8 7.5 3 7.5 1.9 0 1.7-5.1 3.3-5.1s1.4 5.1 3.3 5.1c2.2 0 2.3-4.8 3-7.5.8-2.8 2.5-6 1.3-9.3C18.4 1.8 14 2 12 3.2Z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 3 10.5V21h6.5v-6h5v6H21V10.5L12 3Z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h7v7H4V4Zm9 0h7v7h-7V4ZM4 13h7v7H4v-7Zm9 0h7v7h-7v-7Z"/></symbol>
+  <symbol id="i-kid" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM8.5 9.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 18a5.5 5.5 0 0 1-4.9-3h9.8A5.5 5.5 0 0 1 12 18Z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2Zm-2 8v9h14v-9H5Zm2 2h4v4H7v-4Z"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7L12 2Zm7 12 1 2.8 2.8 1-2.8 1L19 21.6l-1-2.8-2.8-1 2.8-1L19 14Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Zm-1 14-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10l-6 6Z"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+</svg>
+
+<div class="orbs" aria-hidden="true"><i></i><i></i><i></i></div>
+<a class="skip" href="#book">انتقل للحجز</a>
+
+<header class="top">
+  <div class="wrap">
+    <div class="bar glass">
+      <a class="brand" href="#home" translate="no">
+        <span class="logo"><svg aria-hidden="true" style="color:#061727"><use href="#i-tooth"/></svg></span>
+        <span><b>د. رشا رشاد</b><small>لطب الفم والأسنان · بورسعيد</small></span>
+      </a>
+      <nav class="tabs" aria-label="صفحات الموقع">
+        <span class="pill" aria-hidden="true"></span>
+        <a href="#home" data-r="home">الرئيسية</a>
+        <a href="#services" data-r="services">الخدمات</a>
+        <a href="#book" data-r="book">الحجز والعنوان</a>
+      </nav>
+      <a class="btn btn-wa btn-sm" href="https://wa.me/201223533734?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>واتساب</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- HOME -->
+  <section class="view" id="v-home" aria-labelledby="h-home">
+    <div class="hero">
+      <div class="stag">
+        <h1 id="h-home"><span class="grad">ابتسامة صحية</span><br>تبدأ من زيارة مريحة</h1>
+        <p class="sub">عيادة د. رشا رشاد اللاوندي لطب الفم والأسنان، للكبار والأطفال في أرض العزب ببورسعيد.</p>
+        <p class="motto glass">الضمير والأمانة هي شعارنا واهتمامنا</p>
+        <div class="ctas">
+          <a class="btn btn-wa" href="#book"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>احجز موعدك</a>
+          <a class="btn btn-glass" href="tel:+201223533734"><svg class="ic" aria-hidden="true"><use href="#i-ph"/></svg><span class="num" translate="no">012 2353 3734</span></a>
+        </div>
+      </div>
+      <div class="stage" id="stage">
+        <div class="orbcard glass" id="tilt">
+          <svg viewBox="0 0 200 220" role="img" aria-label="رسم سنة مبتسمة">
+            <path d="M100 18c-18-12-62-14-74 18-12 32 4 64 12 92 7 26 8 74 30 74 18 0 16-50 32-50s14 50 32 50c22 0 23-48 30-74 8-28 24-60 12-92-12-32-56-30-74-18Z" fill="url(#tg)"/>
+            <path d="M48 40c10-14 30-16 40-10" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+            <circle cx="76" cy="88" r="9" fill="#0b3557"/><circle cx="124" cy="88" r="9" fill="#0b3557"/>
+            <circle cx="79" cy="85" r="3" fill="#ffffff"/><circle cx="127" cy="85" r="3" fill="#ffffff"/>
+            <path d="M80 114c11 13 29 13 40 0" fill="none" stroke="#0b3557" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="62" cy="108" r="8" fill="#f3a6c0" opacity=".75"/><circle cx="138" cy="108" r="8" fill="#f3a6c0" opacity=".75"/>
+          </svg>
+        </div>
+        <div class="float glass f1"><span class="dot" style="background:var(--aqua)"></span><b>للكبار والأطفال</b></div>
+        <div class="float glass f2"><span class="dot" style="background:var(--gold)"></span><b>أرض العزب، بورسعيد</b></div>
+        <div class="float glass f3"><span class="dot" style="background:var(--wa)"></span><b>الحجز على واتساب</b></div>
+      </div>
+    </div>
+
+    <div class="quick stag">
+      <a class="tile glass" href="#services">
+        <span class="gi g1"><svg aria-hidden="true"><use href="#i-grid"/></svg></span>
+        <h3>خدمات العيادة</h3><p>من الكشف والحشو لحد التركيبات والتبييض.</p><span class="go">شوف الخدمات</span>
+      </a>
+      <a class="tile glass" href="tel:+201223533734">
+        <span class="gi g2"><svg aria-hidden="true"><use href="#i-ph"/></svg></span>
+        <h3>كلمنا مباشرة</h3><p>عندك سؤال قبل الحجز؟ اتصل بالعيادة على <span class="num" translate="no">01223533734</span>.</p><span class="go">اتصل الآن</span>
+      </a>
+      <a class="tile glass" href="#book">
+        <span class="gi g3"><svg aria-hidden="true"><use href="#i-cal"/></svg></span>
+        <h3>احجز في دقيقة</h3><p>اختار اللي محتاجه وابعت رسالة واتساب جاهزة.</p><span class="go">ابدأ الحجز</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="view" id="v-services" aria-labelledby="h-svc" hidden>
+    <div class="head">
+      <h2 id="h-svc" class="grad">خدمات العيادة</h2>
+      <p>بنبدأ دايماً بكشف وفحص، ونشرح لك خطة العلاج وتكلفتها بوضوح قبل أي خطوة. دوس على أي خدمة تعرف تفاصيلها.</p>
+    </div>
+    <div class="svc stag">
+      <details class="glass"><summary><span class="gi g1"><svg aria-hidden="true"><use href="#i-tooth"/></svg></span><h3>الكشف والفحص</h3><svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+        <div class="body"><p>فحص كامل للأسنان واللثة، وأشعة لو محتاج، وبعدها خطة علاج واضحة بالخطوات والتكلفة.</p><button class="btn btn-glass btn-sm" type="button" data-need="كشف وفحص">احجز كشف</button></div></details>
+      <details class="glass"><summary><span class="gi g2"><svg aria-hidden="true"><use href="#i-spark"/></svg></span><h3>الحشوات التجميلية</h3><svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+        <div class="body"><p>علاج التسوس بحشو بلون السنة الطبيعي، فالحشو ميبانش وأنت بتضحك.</p><button class="btn btn-glass btn-sm" type="button" data-need="حشو تجميلي">احجز للحشو</button></div></details>
+      <details class="glass"><summary><span class="gi g3"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><h3>علاج العصب</h3><svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+        <div class="body"><p>لما التسوس يوصل للعصب ويسبب ألم، علاج العصب بينضف السنة من جوه ويحافظ عليها بدل ما تتخلع.</p><button class="btn btn-glass btn-sm" type="button" data-need="علاج عصب">احجز لعلاج العصب</button></div></details>
+      <details class="glass"><summary><span class="gi g4"><svg aria-hidden="true"><use href="#i-spark"/></svg></span><h3>تنظيف الجير واللثة</h3><svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+        <div class="body"><p>إزالة الجير والبقع، وعلاج نزيف والتهاب اللثة قبل ما يأثر على ثبات الأسنان.</p><button class="btn btn-glass btn-sm" type="button" data-need="تنظيف جير">احجز للتنظيف</button></div></details>
+      <details class="glass"><summary><span class="gi g1"><svg aria-hidden="true"><use href="#i-tooth"/></svg></span><h3>التركيبات</h3><svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+        <div class="body"><p>تيجان (طرابيش) وجسور وأطقم لتعويض الأسنان المفقودة أو حماية سنة ضعيفة.</p><button class="btn btn-glass btn-sm" type="button" data-need="تركيبات">احجز للتركيبات</button></div></details>
+      <details class="glass"><summary><span class="gi g2"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><h3>الخلع</h3><svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+        <div class="body"><p>خلع الأسنان والضروس اللي مينفعش تتعالج، مع تعليمات واضحة للعناية بعد الخلع.</p><button class="btn btn-glass btn-sm" type="button" data-need="خلع">احجز للخلع</button></div></details>
+      <details class="glass"><summary><span class="gi g3"><svg aria-hidden="true"><use href="#i-kid"/></svg></span><h3>أسنان الأطفال</h3><svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+        <div class="body"><p>كشف ووقاية وعلاج لأسنان اللبن في جو هادي، عشان الطفل يحب زيارة الدكتورة مش يخاف منها.</p><button class="btn btn-glass btn-sm" type="button" data-need="أسنان أطفال" data-who="لطفلي">احجز لطفلك</button></div></details>
+      <details class="glass"><summary><span class="gi g4"><svg aria-hidden="true"><use href="#i-spark"/></svg></span><h3>تبييض الأسنان</h3><svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+        <div class="body"><p>تفتيح لون الأسنان بأمان تحت إشراف الطبيبة، بعد الكشف والتأكد إن اللثة والأسنان سليمة.</p><button class="btn btn-glass btn-sm" type="button" data-need="تبييض">احجز للتبييض</button></div></details>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="view" id="v-book" aria-labelledby="h-book" hidden>
+    <div class="head">
+      <h2 id="h-book" class="grad">احجز موعدك</h2>
+      <p>اختار اللي محتاجه، وهنجهزلك رسالة واتساب جاهزة تبعتها للعيادة.</p>
+    </div>
+    <div class="book">
+      <form id="bk" class="glass" novalidate>
+        <fieldset>
+          <legend>الموعد لمين؟</legend>
+          <div class="chips">
+            <input type="radio" name="who" id="w1" value="ليا" checked><label for="w1">ليا أنا</label>
+            <input type="radio" name="who" id="w2" value="لطفلي"><label for="w2">لطفلي</label>
+            <input type="radio" name="who" id="w3" value="لحد من العيلة"><label for="w3">حد من العيلة</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>إيه اللي محتاجه؟</legend>
+          <div class="chips">
+            <input type="radio" name="need" id="n0" value="ألم في سنة أو ضرس" checked><label for="n0">ألم في سنة</label>
+            <input type="radio" name="need" id="n1" value="كشف وفحص"><label for="n1">كشف وفحص</label>
+            <input type="radio" name="need" id="n2" value="حشو تجميلي"><label for="n2">حشو</label>
+            <input type="radio" name="need" id="n3" value="علاج عصب"><label for="n3">علاج عصب</label>
+            <input type="radio" name="need" id="n4" value="تنظيف جير"><label for="n4">تنظيف جير</label>
+            <input type="radio" name="need" id="n5" value="تركيبات"><label for="n5">تركيبات</label>
+            <input type="radio" name="need" id="n6" value="خلع"><label for="n6">خلع</label>
+            <input type="radio" name="need" id="n7" value="أسنان أطفال"><label for="n7">أسنان أطفال</label>
+            <input type="radio" name="need" id="n8" value="تبييض"><label for="n8">تبييض</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label class="lbl" for="nm">الاسم</label>
+          <input type="text" id="nm" name="name" autocomplete="name" placeholder="مثلاً: محمد أحمد…">
+        </div>
+        <div class="field">
+          <label class="lbl" for="tm">الوقت المناسب ليك</label>
+          <select id="tm" name="time">
+            <option value="أي وقت متاح">أي وقت متاح</option>
+            <option value="الصبح">الصبح</option>
+            <option value="بعد الضهر">بعد الضهر</option>
+            <option value="بالليل">بالليل</option>
+          </select>
+        </div>
+        <div class="field">
+          <span class="note">الرسالة اللي هتتبعت:</span>
+          <p class="bubble" id="pv" aria-live="polite"></p>
+        </div>
+        <button class="btn btn-wa" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>افتح واتساب وابعت الرسالة</button>
+        <p class="note">مش بنحفظ أي بيانات على الموقع. الرسالة بتروح مباشرة من موبايلك للعيادة على واتساب.</p>
+      </form>
+
+      <div class="side">
+        <div class="info glass"><span class="gi g1"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+          <div><b>العنوان</b><p>عمارة ٣٣، تقاطع شارع النصر وعباس العقاد، أرض العزب، بورسعيد. خلف مطعم سرحان.</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D9%86%D8%B5%D8%B1+%D8%B9%D8%A8%D8%A7%D8%B3+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%AF+%D8%A3%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D8%B2%D8%A8+%D8%A8%D9%88%D8%B1%D8%B3%D8%B9%D9%8A%D8%AF" target="_blank" rel="noopener">افتح المكان على خرائط جوجل</a></div></div>
+        <div class="info glass"><span class="gi g3"><svg aria-hidden="true"><use href="#i-ph"/></svg></span>
+          <div><b>تليفون وواتساب</b><p class="num" id="phone" translate="no">01223533734</p><button class="copy" type="button" id="cp">انسخ الرقم</button></div></div>
+        <div class="info glass"><span class="gi g2"><svg aria-hidden="true"><use href="#i-clk"/></svg></span>
+          <div><b>المواعيد</b><p>ابعت على واتساب أو اتصل وهنأكدلك أقرب موعد متاح.</p></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>عيادة د. رشا رشاد لطب الفم والأسنان، بورسعيد</span>
+    <a href="https://www.facebook.com/share/1EUbPvDxG1/" target="_blank" rel="noopener">صفحة العيادة على فيسبوك</a>
+  </div>
+</footer>
+
+<div class="dock">
+  <nav class="glass" aria-label="صفحات الموقع">
+    <span class="pill" aria-hidden="true"></span>
+    <a href="#home" data-r="home"><svg aria-hidden="true"><use href="#i-home"/></svg>الرئيسية</a>
+    <a href="#services" data-r="services"><svg aria-hidden="true"><use href="#i-grid"/></svg>الخدمات</a>
+    <a href="#book" data-r="book"><svg aria-hidden="true"><use href="#i-cal"/></svg>احجز</a>
+  </nav>
+</div>
+
+<script>
+(function(){
+  var WA='201223533734', ROUTES=['home','services','book'];
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var current=null;
+
+  function movePills(r){
+    document.querySelectorAll('.tabs,.dock nav').forEach(function(nav){
+      var a=nav.querySelector('[data-r="'+r+'"]'), pill=nav.querySelector('.pill');
+      nav.querySelectorAll('a[data-r]').forEach(function(x){x.removeAttribute('aria-current')});
+      if(!a||!pill)return; a.setAttribute('aria-current','page');
+      var nr=nav.getBoundingClientRect(), ar=a.getBoundingClientRect();
+      if(!nr.width)return;
+      pill.style.width=ar.width+'px';
+      pill.style.transform='translateX('+(ar.left-nr.left-nav.clientLeft)+'px)';
+      pill.style.left='0';
+    });
+  }
+  function show(r){
+    if(ROUTES.indexOf(r)<0)r='home';
+    if(r===current){movePills(r);return;}
+    var swap=function(){
+      ROUTES.forEach(function(k){var v=document.getElementById('v-'+k);v.hidden=(k!==r);v.classList.remove('enter');});
+      var v=document.getElementById('v-'+r);
+      if(!reduce){void v.offsetWidth;v.classList.add('enter');}
+      window.scrollTo(0,0);
+      current=r; movePills(r);
+      document.title=r==='home'?'عيادة د. رشا رشاد':v.querySelector('h2').textContent+' | عيادة د. رشا رشاد';
+    };
+    if(document.startViewTransition&&!reduce&&current!==null){document.startViewTransition(swap);}else{swap();}
+  }
+  function route(){show((location.hash||'#home').slice(1));}
+  addEventListener('hashchange',route);
+  addEventListener('resize',function(){movePills(current)});
+  route();
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){movePills(current)});
+
+  /* booking */
+  var f=document.getElementById('bk'), pv=document.getElementById('pv');
+  function msg(){
+    var who=f.querySelector('input[name=who]:checked').value;
+    var need=f.querySelector('input[name=need]:checked').value;
+    var nm=document.getElementById('nm').value.trim();
+    var tm=document.getElementById('tm').value;
+    return 'السلام عليكم، حابب أحجز موعد في عيادة د. رشا رشاد.\n'+(nm?'الاسم: '+nm+'\n':'')+'الموعد '+who+' بخصوص: '+need+'\n'+'الوقت المناسب: '+tm;
+  }
+  function upd(){pv.textContent=msg();}
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+  function pick(name,val){var i=f.querySelector('input[name='+name+'][value="'+val+'"]');if(i){i.checked=true;upd();}}
+  document.querySelectorAll('[data-need]').forEach(function(b){
+    b.addEventListener('click',function(){pick('need',b.dataset.need);if(b.dataset.who)pick('who',b.dataset.who);location.hash='book';});
+  });
+  document.querySelectorAll('[data-who-link]').forEach(function(a){
+    a.addEventListener('click',function(){pick('who',a.dataset.whoLink);pick('need','أسنان أطفال');});
+  });
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var a=document.createElement('a');
+    a.href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg());
+    a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+  });
+  var cp=document.getElementById('cp');
+  cp.addEventListener('click',function(){
+    var el=document.getElementById('phone');
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);cp.textContent='الرقم متحدد، انسخه';}
+    try{navigator.clipboard.writeText(el.textContent).then(function(){cp.textContent='اتنسخ';},sel);}catch(err){sel();}
+  });
+
+  /* 3D tilt on the hero orb (mouse only) */
+  var stage=document.getElementById('stage'), tilt=document.getElementById('tilt');
+  if(!reduce&&matchMedia('(pointer:fine)').matches){
+    stage.addEventListener('pointermove',function(e){
+      var r=stage.getBoundingClientRect(), x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
+      tilt.style.transform='rotateY('+(x*18)+'deg) rotateX('+(-y*18)+'deg)';
+    });
+    stage.addEventListener('pointerleave',function(){tilt.style.transform='';});
+  }
+})();
+</script>
+
+</body>
+</html>
